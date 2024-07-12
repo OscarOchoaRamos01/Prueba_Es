@@ -1,0 +1,113 @@
+.Seccion {
+     width: 100%;
+     min-height: 50vh;
+     display: grid;
+     place-items: center;
+}
+
+.row {
+     width: 80%;
+     max-width: 1170px;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-gap: 100px;
+     overflow: hidden;
+     padding: 5rem 0;
+}
+
+.row .imgWrapper {
+     overflow: hidden;
+     border-radius: 15px;
+}
+
+.row .imgWrapper img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     transition: 0.3s;
+}
+
+.row .contentWrapper {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-left: 30px;
+}
+
+.row .contentWrapper span.textWrapper {
+     display: block;
+     font-size: 20px;
+     text-transform: capitalize;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     gap: 15px;
+     margin-bottom: 20px;
+}
+
+.row .contentWrapper span.textWrapper span {
+     display: inline-block;
+     background: #383f47;
+     width: 70px;
+     height: 5px;
+}
+
+.row .contentWrapper h2 {
+     font-size: 40px;
+     font-weight: 700;
+     color: #383f47;
+     padding-bottom: 20px;
+}
+
+.row .contentWrapper p {
+     font-size: 16px;
+     line-height: 25px;
+     padding-bottom: 25px;
+}
+
+@media(max-width:991px) {
+     .row {
+          grid-template-columns: 1fr;
+          grid-gap: 50px;
+     }
+
+     .row .contentWrapper {
+          padding-left: 0;
+     }
+
+}
+
+.mapa {
+     text-align: center;
+     font-size: 40px;
+     font-weight: bold;
+}
+
+.mapa h2 {
+     padding: 40px;
+     color: var(--dark-color);
+}
+
+iframe {
+     width: 90%;
+     height: 600px;
+     border-radius: 25px;
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+     margin-bottom: 40px;
+}
+
+@media(max-width: 575px) {
+     .row .contentWrapper span.textWrapper {
+          font-size: 18px;
+     }
+
+     .row .contentWrapper h2 {
+          font-size: 25px;
+     }
+
+     .row .contentWrapper p {
+          font-size: 15px;
+          line-height: 22px;
+     }
+}

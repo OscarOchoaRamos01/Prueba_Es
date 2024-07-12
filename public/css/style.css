@@ -1,0 +1,114 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     font-family: 'poppins', sans-serif;
+     line-height: 1.6em;
+     background: #fbfafa;
+}
+
+a {
+     text-decoration: none;
+     color: #2b2d42;
+}
+
+h2 {
+     margin-bottom: 15px;
+}
+
+.container {
+     margin: auto;
+     padding: 0 20px;
+     max-width: 1100px;
+}
+
+#showcase {
+     height: 90vh;
+     background-image: url(/public/img/imagen1.jpg);
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+}
+
+.overlay {
+     height: 90vh;
+     background: rgba(43, 45, 66, 0.7);
+}
+
+nav {
+     height: 80px;
+     width: 100%;
+}
+
+.logo {
+     color: white;
+     font-size: 30px;
+     line-height: 80px;
+     padding: 0 10px;
+     font-weight: bold;
+}
+
+nav ul {
+     float: right;
+     margin-right: 20px;
+}
+
+nav ul li {
+     display: inline-block;
+     line-height: 80px;
+     margin: 0 5px;
+}
+
+nav ul li a {
+     color: white;
+     font-size: 17px;
+     padding: 7px 13px;
+     border-radius: 3px;
+     text-transform: uppercase;
+}
+
+.active, a:hover {
+     color: #ef233c;
+     border-bottom: 1px solid #ef233c;
+}
+
+.landing {
+     display: table;
+     height: 73.1vh;
+     width: 100%;
+     text-align: left;
+}
+
+.landing-content {
+     display: table-cell;
+     vertical-align: middle;
+     text-transform: uppercase;
+     color: #edf2f4;
+}
+
+.sm-heading {
+     font-weight: 300;
+     margin: 5px;
+     font-size: 1.5em;
+     text-align: center;
+}
+
+.sm-heading span {
+     border-left: 5px solid #ef233c;
+     padding-left: 15px;
+}
+
+.lg-heading {
+     font-size: 3em;
+     line-height: 1.3em;
+     font-weight: 700;
+     text-align: center;
+}
+
+.text-primary {
+     color: #ef233c;
+}
